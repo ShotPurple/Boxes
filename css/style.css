@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* Hint: */
+
+/*
+.box {
+  border: 3px solid black;
+}
+*/
+html body {
+  height: 100%;
+}
+
+div.container {
+
+  height: 100%;
+  background-color: #ffcc99;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ff8000;
+}
+/*
+div.top {
+  background-colour: #b3c6ff;
+  align: top;
+  height: 10em;
+  border-style: dotted;
+  border-width: 3px;
+  border-color: blue;
+  position: relative;
+}
+*/
+header {
+  border: 3px solid #9933ff;
+  height: 10%;
+  /*max-height: 15%;*/
+  padding: 3px;
+  background-color:  #b3d9ff;
+
+  /*position: relative;*/
+
+}
+
+/*header.ul {
+  display: inline;
+}*/
+
+li.box {
+  display: inline-block;
+}
+
+/*  float: left;
+}
+
+header.li {
+  display: inline;
+  width: 10%;
+}
+header.div {
+  /*float: left;{}*/
+
+/*header li.box {
+
+/*  height: 4.5em;*/
+
+
+/*
+header.box  {
+  font: #0040ff;
+
+ height: 4.5em;
+  width: 18%;
+  margin: 2px;
+  display: inline-block;
+}*/
+
+header div.line {
+  display: inline;
+}
+
+#visible {
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  background-color: #e6f5ff;
+  height: 4.5em;
+   width: 18%;
+}
+#burger {
+border-style: solid;
+border-width: 3px;
+border-color: black;
+background-color: #e6f5ff;
+height: 4.5em;
+ width: 18%;
+/*visibility: hidden*/
+}
+
+/*
+header div.line {
+border-style: dotted;
+border-width: 3px;
+border-color: brown;
+width: 80%;
+height: 1em;
+margin: auto;
+}*/
+/*
+header li.nav_btn {
+
+  display: inline-block;
+  text-align: center;
+  border-style: dotted;
+  border-width: 3px;
+  border-color: pink;
+  font: #0040ff;
+}*/
+/*
+div.middle {
+  background-colour: #ffccff align: top;
+  height: 10em;
+  border-style: dotted;
+  border-width: 3px;
+  border-color: red;
+}
+*/
+main {
+  border: 3px solid red;
+  height: 20%;
+  margin: auto;
+  padding: 3px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+  color: red;
+  background-color: ##ffccff;
+}
+
+main div.carousel {
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+  color: red;
+}
+
+main ul.panels {
+  display: block;
+}
+
+main li.box {
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+  color: red;
+
+ height: 4.5em;
+  width: 24%;
+
+  display:inline-block;
+}
+
+/*div.bottom {
+  background-colour: #d6f5d6 align: top;
+  height: 10em;
+  border-style: dotted;
+  border-width: 3px;
+  border-color: green;
+}*/
+
+footer {
+  background-color: #e6ffe6;
+  border-style: solid;
+  border-width: 3px;
+  border-color: green;
+  color: green;
+  /*height: 25%;*/
+}
+
+footer.ul {
+}
+
+footer li.box {
+  border-style: solid;
+  border-width: 3px;
+  border-color: green;
+  color: green;
+  display: inline;
+  height: 4.5em;
+  width: 32%;
+  margin: 2px;
+  display: inline-block;
+}

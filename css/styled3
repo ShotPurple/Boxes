@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* first, style the page for a mobile */
+
+/*checked*/
+
+div.container {
+  background-color: #ffffb3;
+  /*min-height: 900px;*/
+}
+
+/*checked*/
+
+.box {
+  border: 3px solid purple;
+  padding: 10px;
+  height: 100px;
+}
+
+/*HEADER / NAVIGATION */
+
+/*header.box {
+  border: 3px solid purple;
+  padding: 10px;
+  height: 100px;
+}*/
+
+/*checked*/
+
+header {
+  background-color: #b3ffff;
+  border-style: solid;
+  border-color: #0000ff;
+  border-width: 3px;
+  height: 150px;
+  padding: 10px;
+}
+
+/*nav {
+  height: 300px;
+
+}*/
+
+/*checked*/
+
+nav.li {
+  display: none;
+  /* hint: what does display none do, why do you think it's used here? */
+  margin: 10px;
+  padding: 12px;
+  width: 19%;
+  background-color: #ccf2ff
+}
+
+/*checked*/
+
+nav li.nav_btn {
+  float: right;
+  max-width: 50px;
+  padding: 2px 0;
+  border-style: dashed;
+  border-color: #002699;
+  border-width: 2px;
+  height: 35px;
+}
+
+/*checked*/
+
+.line {
+  background: black;
+  border-radius: 5px;
+  height: 4px;
+  margin: 3px auto;
+  width: 80%;
+}
+
+/* MAIN
+checked*/
+
+main {
+  background-color: #ffb3b3;
+  border-style: solid;
+  border-color: #ff0000;
+  border-width: 3px;
+  height: 625px;
+  /*height: 600px;
+padding: 20px;*/
+}
+
+/*checked*/
+
+.carousel {
+  /*margin: auto;*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 98.5%;
+  height: 50%;
+  background-color: #ffccff;
+  border-style: dashed;
+  border-color: #8600b3;
+  border-width: 2px;
+}
+
+/*main.box {
+  border: 3px solid purple;
+  padding: 10px;
+  height: 100px;
+}
+*/
+
+/*checked
+instead of nav.panels li
+ul.panels li {
+margin: 10px;
+padding: 12px;
+*/
+
+
+nav.panels {
+  width: 48.6%;
+  height: 115px;
+  background-color: #ff4dff;
+  border-style: dashed;
+  border-color: #ffccf2;
+  border-width: 2px;
+  display: inline-flow;
+}
+
+/*not in original*/
+
+li.five {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
+li.seven {
+  margin-top: 22px;
+  margin-left: 15px;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+li.six {
+  margin-top: 10px;
+  margin-left: 18px;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
+li.eight {
+  margin-top: 22px;
+  margin-left: 18px;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+/*footer.box {
+  border: 3px solid purple;
+  padding: 10px;
+  height: 100px;
+}*/
+
+/*checked*/
+
+footer {
+  background-color: #c2f0c2;
+  border-style: solid;
+  border-color: #009933;
+  border-width: 3px;
+  height: 200px;
+  /*height: auto;*/
+}
+
+/*checked*/
+
+ul.footer {
+  /*margin: 20px 0;
+  padding: 1%;
+  no height set*/
+  height: 195px;
+  margin: auto;
+  background-color: #8cff66;
+  border-style: dashed;
+  border-color: green;
+  border-width: 2px;
+}
+
+/*checked*/
+
+ul.footer li {
+  /*height: 20%;
+    margin: 1%;*/
+  height: 80%;
+  margin-top: 18px;
+  background-color: #47d147;
+  border-style: dashed;
+  border-color: green;
+  border-width: 2px;
+}
+
+/*no in original*/
+
+li.nine {
+  margin-left: 40px;
+  margin-right: 8px;
+}
+
+li.ten {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+li.eleven {
+  margin-left: 8px;
+}
+
+/* all the styles above affect all screen sizes, but adding media queries means you’re adding code which will only affect the a screen of a specific size, with “mobile first” you first design for mobile and then add media queries which affect wider screens so…. */
+
+/* Tablets */
+
+@media only screen and (min-width: 768px) {
+  /*
+  css code (which only affects devices with screens over 768px wide) goes here
+  */
+  /*checked
+  ul.panels li  swap for nav.box*/
+  main.li {
+    width: 40%;
+    display: inline-block;
+  }
+  /*checked*/
+  ul.footer li {
+    width: 30%;
+    display: inline-block;
+  }
+}
+
+/* Laptops & Desktops */
+
+@media only screen and (min-width: 992px) {
+  /*
+  css code (which only affects devices with screens over 992px wide) goes here
+  */
+  /*checked*/
+  nav li {
+    display: inline-block;
+    /* hint: what does display none do, why do you think it's used here? */
+  }
+  /*checked*/
+  ul.footer li {
+    width: 30%;
+    display: inline-block;
+  }
+}
+
+/*/*Tablet - iPad reglar starts at 768px wide #
+@media screen and (min-width: 768px) {
+  .dessert-article {
+    width: 50%;
+    float: left;
+    }
+  .dessert-article:nth-child(3) {
+    clear: left;
+  }
+}
+
+/*From lesson
+
+Desktop - standard sizer start at 1100px wide
+
+@media screen and (min-width: 1100px) {
+  #page-logo, #main-nav {
+    float: left;
+    width: 50%;
+  }
+
+  #main-nav {
+      display:block;
+  }
+  #main-nav li {
+      display: inline-block;
+  }
+*/
